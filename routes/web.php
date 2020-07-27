@@ -30,7 +30,7 @@ Route::post('/nueva', 'NotificacionController@nuevaAlerta')->name('nuevaAlerta')
 
 $nombre_ayudante='Juanin Juan Harry';
 
-Route::view('/','welcome')->name('home');
+Route::view('/','welcome')->name('welcome');
 //Route::view('/horario_lab','horario_lab',compact('nombre_ayudante'))->name('horariolab');
 Route::get('/horario_labA','HorarioLabAController@index')->name('horariolabA');
 Route::get('/horario_labB','HorarioLabBController@index')->name('horariolabB');
