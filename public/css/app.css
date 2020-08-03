@@ -10951,3 +10951,31 @@ a.text-dark:focus {
   }
 }
 
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+  color: white !important;
+  background-color: #343a40 !important;
+  opacity: 0.5;
+}
+
+.navbar .nav-item .dropdown-menu .active {
+  color: white !important;
+  background-color: #343a40 !important;
+  opacity: 0.8;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://cdn.discordapp.com/attachments/712807006670553119/737459140305092738/4abf3db3-b863-4b1c-9b9a-ff8569e837f8.jpg");
+  /* Full height */
+  height: 100%;
+  widht: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
