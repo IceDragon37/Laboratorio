@@ -17,8 +17,8 @@ class CreateHorarioLabATable extends Migration
             $table->bigIncrements('id');
             $table->string('dia');
             $table->string('clave');
-            $table->text('clase');
-            $table->string('profesor');
+            $table->text('clase')->nullable();
+            $table->string('profesor')->nullable();
             $table->timestamps();
         });
     }
