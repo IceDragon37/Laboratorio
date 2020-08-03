@@ -330,6 +330,29 @@ legend {
   white-space: normal;
 }
 
+/*Colores de fondo paleta de colores escuela*/
+#color_fondo_pag
+{
+  background-color: #848C94;
+}
+#color_inicio_ses
+{
+  background-color: #EEEEEE
+}
+#color_boton
+{
+  background-color: #0474A4;
+}
+#color_barra_nav
+{
+  background-color: #7cacac;
+}
+#color_cuadros_form
+{
+  background-color: #DDE6E6;
+}
+/*fin paleta de colores*/
+
 progress {
   vertical-align: baseline;
 }
