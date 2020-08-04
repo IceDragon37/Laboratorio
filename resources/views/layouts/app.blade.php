@@ -1,4 +1,4 @@
-@section('nombreAyudante',$nombre_ayudante)
+@section('nombreAyudante',$nombre_ayudante ?? '')
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -69,8 +69,8 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <a class="dropdown-item" href="{{ route('manuales') }}">Manuales</a>
-                                <a class="dropdown-item" href="#">Tutoriales</a>
-                                <a class="dropdown-item" href="#">Contraseñas</a>
+                                <a class="dropdown-item" href="{{ route('tutoriales') }}">Tutoriales</a>
+                                <a class="dropdown-item" href="{{ route('claves') }}">Contraseñas</a>
                             </div>
                         </li>
                         

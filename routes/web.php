@@ -36,3 +36,5 @@ Route::view('/horario_ayudantes', 'horario_ayudantes', compact('nombre_ayudante'
 Route::view('/horario_salas', 'horario_salas', compact('nombre_ayudante'))->name('horariosalas');
 
 Route::get('/manuales', "DocumentosController@manuales")->name('manuales');
+Route::get('/tutoriales', "DocumentosController@tutoriales")->name('tutoriales');
+Route::get('/claves', "DocumentosController@claves")->name('claves');
