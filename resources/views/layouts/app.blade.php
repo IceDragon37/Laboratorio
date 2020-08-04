@@ -1,3 +1,4 @@
+@section('nombreAyudante',$nombre_ayudante)
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -7,10 +8,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'SWL') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -39,18 +41,27 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Llaves</a>
                         </li>
-
+                        <!--prueba de dropdown dentro de otro-->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Horarios
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Lab A</a>
-                            <a class="dropdown-item" href="#">Lab b</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Salas</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" id="color_barra_nav">
+                            <div class="dropdown-item dropdown-submenu">
+                                <a>Horarios laboratorios</a>
+                                <ul class="dropdown-menu" id="color_barra_nav">
+                                <li><a class="dropdown-item" href="{{route('horariolabA')}}">Laboratorio A</a></li>
+                                <li><a class="dropdown-item" href="/horario_labB">Laboratorio B</a></li>
+                                <li><a class="dropdown-item" href="/horario_labC">Laboratorio C</a></li>
+                                </ul>
                             </div>
+                            <a class="dropdown-item" href="/horario_labUX">Horario laboratorio de usabilidad</a>
+                            <a class="dropdown-item" href="/horario_rack">Horario Rack</a>
+                            <a class="dropdown-item" href="/horario_ayudantes">Horario Ayudantes</a>
+                            <a class="dropdown-item" href="/horario_salas">Salas</a>
+                            
                         </li>
+                        <!--Fin de prueba de dropdown dentro de otro-->
                         
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

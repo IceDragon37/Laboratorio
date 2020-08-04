@@ -6,5 +6,11 @@ use Illuminate\Http\Request;
 
 class HorarioLabAController extends Controller
 {
-    //
+	public function index()
+    {
+        $nombre_ayudante='Juanin Juan Harry';
+
+
+        return view('horario_labA',compact('nombre_ayudante'));
+    }
 }
