@@ -1,9 +1,9 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('titulo','Horario Laboratorio Usabilidad')
 @section('nombreAyudante',$nombre_ayudante)
 
-@section('contenido')
+@section('content')
 
 	<h1>Horario del lab de Usabilidad</h1>
 

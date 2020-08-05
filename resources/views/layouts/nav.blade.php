@@ -35,7 +35,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="#">Caja</a>
                         </li>
                         <li class="nav-item">
@@ -55,10 +55,10 @@
                                 <li><a class="dropdown-item" href="{{route('horariolabC')}}">Laboratorio C</a></li>
                                 </ul>
                             </div>
-                            <a class="dropdown-item" href="/horario_labUX">Horario laboratorio de usabilidad</a>
-                            <a class="dropdown-item" href="/horario_rack">Horario Rack</a>
-                            <a class="dropdown-item" href="/horario_ayudantes">Horario Ayudantes</a>
-                            <a class="dropdown-item" href="/horario_salas">Salas</a>
+                            <a class="dropdown-item" href="{{route('horario_labUX')}}">Horario laboratorio de usabilidad</a>
+                            <a class="dropdown-item" href="{{route('horario_rack')}}">Horario Rack</a>
+                            <a class="dropdown-item" href="{{route('horario_ayudantes')}}">Horario Ayudantes</a>
+                            <a class="dropdown-item" href="{{route('horario_salas')}}">Salas</a>
                             
                         </li>
                         <!--Fin de prueba de dropdown dentro de otro-->
@@ -82,6 +82,15 @@
                                 <a class="dropdown-item" href="/nueva">Nuevo aviso</a>
                                 <a class="dropdown-item" href="/lista">Lista de avisos</a>
                                 <a class="dropdown-item" href="/sanciones">Sanciones</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown" >
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Administración
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="color_barra_nav">
+                                <a class="dropdown-item" href="#">Ayudantes</a>
+                                <a class="dropdown-item" href="#">Laboratorio Optimización</a>
                             </div>
                         </li>
                     </ul>

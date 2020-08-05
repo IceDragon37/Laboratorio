@@ -23,7 +23,6 @@ Route::get('/sanciones', 'SancionController@sanciones')->name('sanciones');
 
 Route::post('/nueva', 'NotificacionController@nuevaAlerta')->name('nuevaAlerta');
 
-
 $nombre_ayudante='Juanin Juan Harry';
 
 Route::view('/','welcome')->name('welcome');
@@ -35,3 +34,5 @@ Route::get('/horario_labUX','HorarioLabUXController@index')->name('horariolabUX'
 Route::get('/horario_rack','HorarioRackController@index')->name('horariorack');
 Route::view('/horario_ayudantes', 'horario_ayudantes', compact('nombre_ayudante'))->name('horarioayudantes');
 Route::view('/horario_salas', 'horario_salas', compact('nombre_ayudante'))->name('horariosalas');
+
+Route::get('/manuales', "DocumentosController@manuales")->name('manuales');
