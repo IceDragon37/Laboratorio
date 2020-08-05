@@ -69,8 +69,8 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="color_barra_nav">
                                 <a class="dropdown-item" href="{{ route('manuales') }}">Manuales</a>
-                                <a class="dropdown-item" href="#">Tutoriales</a>
-                                <a class="dropdown-item" href="#">Contraseñas</a>
+                                <a class="dropdown-item" href="{{ route('tutoriales') }}">Tutoriales</a>
+                                <a class="dropdown-item" href="{{ route('claves') }}">Contraseñas</a>
                             </div>
                         </li>
                         

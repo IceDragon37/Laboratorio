@@ -11,4 +11,13 @@ class DocumentosController extends Controller
         // Primer parametro coincide con resources/views/documentos/manuales.blade.php
     }
     
+    public function tutoriales(){
+        return view('documentos/tutoriales');
+        // Primer parametro coincide con resources/views/documentos/manuales.blade.php
+    }
+
+    public function claves(){
+        return view('documentos/claves');
+        // Primer parametro coincide con resources/views/documentos/manuales.blade.php
+    }
 }
