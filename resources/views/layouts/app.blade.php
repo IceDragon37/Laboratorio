@@ -1,4 +1,4 @@
-@section('nombreAyudante',$nombre_ayudante)
+@section('nombreAyudante',$nombre_ayudante ?? '')
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -63,8 +63,15 @@
                         </li>
                         <!--Fin de prueba de dropdown dentro de otro-->
                         
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Documentos</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Documentos
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="{{ route('manuales') }}">Manuales</a>
+                                <a class="dropdown-item" href="{{ route('tutoriales') }}">Tutoriales</a>
+                                <a class="dropdown-item" href="{{ route('claves') }}">Contraseñas</a>
+                            </div>
                         </li>
                         
                         <li class="nav-item">
