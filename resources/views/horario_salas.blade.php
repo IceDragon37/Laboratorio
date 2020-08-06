@@ -5,8 +5,13 @@
 @section('nombreAyudante',$nombre_ayudante)
 
 
+<<<<<<< HEAD
 @section('content')
 <div class="container text-center">
+=======
+@section('contenido')
+	<div class="container text-center">
+>>>>>>> origin/pablo
 		<h1>Horario de Salas</h1>
 		<div class="row">
 			<div class="col-lg-12 my-auto">
@@ -261,4 +266,3 @@
 
 
 @endsection
-
