@@ -3,10 +3,7 @@
 @section('titulo','Horario Laboratorio Usabilidad')
 @section('nombreAyudante',$nombre_ayudante)
 
-<<<<<<< HEAD
 @section('content')
-=======
-@section('contenido')
 	<div class="container text-center">
 		<h1>Horario del laboratorio de Usabilidad</h1>
 		<div class="row">
@@ -103,7 +100,6 @@
 			</div>
 		</div>
 	</div>
->>>>>>> origin/pablo
 
 
 @endsection

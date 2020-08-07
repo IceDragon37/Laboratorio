@@ -10,6 +10,6 @@ class HorarioRackController extends Controller
     {
         $nombre_ayudante='Juanin Juan Harry';
 
-        return view('horario_labUX',compact('nombre_ayudante'));
+        return view('horario_rack',compact('nombre_ayudante'));
     }
 }

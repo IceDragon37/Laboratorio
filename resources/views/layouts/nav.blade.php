@@ -35,11 +35,27 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Caja</a>
+                    <li class="nav-item dropdown" >
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Caja
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="color_barra_nav">
+                                <a class="dropdown-item" href="{{ route('nuevaCaja')}}">Hacer caja</a>
+                                <a class="dropdown-item" href="{{ route('verCaja')}}">Ver caja</a>
+                                <a class="dropdown-item" href="{{ route('verImpresiones')}}">Ver impresiones</a>
+                                <a class="dropdown-item" href="{{ route('agregarImpresion')}}">Agregar impresion</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Llaves</a>
+                        <li class="nav-item dropdown" >
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Llaves
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="color_barra_nav">
+                                <a class="dropdown-item" href="/laboratorio">Hacer caja</a>
+                                <a class="dropdown-item" href="{{ route('verCaja')}}">Ver caja</a>
+                                <a class="dropdown-item" href="{{ route('verImpresiones')}}">Ver impresiones</a>
+                                <a class="dropdown-item" href="{{ route('agregarImpresion')}}">Agregar impresion</a>
+                            </div>
                         </li>
                         <!--prueba de dropdown dentro de otro-->
                         <li class="nav-item dropdown">
@@ -55,10 +71,10 @@
                                 <li><a class="dropdown-item" href="{{route('horariolabC')}}">Laboratorio C</a></li>
                                 </ul>
                             </div>
-                            <a class="dropdown-item" href="{{route('horario_labUX')}}">Horario laboratorio de usabilidad</a>
-                            <a class="dropdown-item" href="{{route('horario_rack')}}">Horario Rack</a>
-                            <a class="dropdown-item" href="{{route('horario_ayudantes')}}">Horario Ayudantes</a>
-                            <a class="dropdown-item" href="{{route('horario_salas')}}">Salas</a>
+                            <a class="dropdown-item" href="/horario_labUX">Horario laboratorio de usabilidad</a>
+                            <a class="dropdown-item" href="/horario_rack">Horario Rack</a>
+                            <a class="dropdown-item" href="/horario_ayudantes">Horario Ayudantes</a>
+                            <a class="dropdown-item" href="/horario_salas">Salas</a>
                             
                         </li>
                         <!--Fin de prueba de dropdown dentro de otro-->
@@ -69,8 +85,8 @@
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="color_barra_nav">
                                 <a class="dropdown-item" href="{{ route('manuales') }}">Manuales</a>
-                                <a class="dropdown-item" href="#">Tutoriales</a>
-                                <a class="dropdown-item" href="#">Contraseñas</a>
+                                <a class="dropdown-item" href="{{ route('tutoriales') }}">Tutoriales</a>
+                                <a class="dropdown-item" href="{{ route('claves') }}">Contraseñas</a>
                             </div>
                         </li>
                         
@@ -84,13 +100,27 @@
                                 <a class="dropdown-item" href="/sanciones">Sanciones</a>
                             </div>
                         </li>
+                    
                         <li class="nav-item dropdown" >
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Administración
                             </a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="color_barra_nav">
-                                <a class="dropdown-item" href="#">Ayudantes</a>
-                                <a class="dropdown-item" href="#">Laboratorio Optimización</a>
+                                <div class="dropdown-item dropdown-submenu">
+                                    <a>Ayudantes</a>
+                                    <ul class="dropdown-menu" id="color_barra_nav">
+                                        <li><a class="dropdown-item" href="/agregarAyudante">Agregar Ayudante</a></li>
+                                        <li><a class="dropdown-item" href="/listarAyudante">Lista de Ayudantes</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-item dropdown-submenu">
+                                    <a>Laboratorio de Optimización</a>
+                                    <ul class="dropdown-menu" id="color_barra_nav">
+                                        <li><a class="dropdown-item" href="/agregarEquipo">Agregar Nuevo Equipo</a></li>
+                                        <li><a class="dropdown-item" href="/asignarAlumno">Asignar Alumno</a></li>
+                                        <li><a class="dropdown-item" href="/listarEquipos">Ver Equipos</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
                     </ul>

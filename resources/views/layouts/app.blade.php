@@ -35,8 +35,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Caja</a>
+                    <li class="nav-item dropdown" >
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Caja
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="color_barra_nav">
+                                <a class="dropdown-item" href="{{ route('nuevaCaja')}}">Hacer caja</a>
+                                <a class="dropdown-item" href="{{ route('verCaja')}}">Ver caja</a>
+                                <a class="dropdown-item" href="{{ route('verImpresiones')}}">Ver impresiones</a>
+                                <a class="dropdown-item" href="{{ route('agregarImpresion')}}">Agregar impresion</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Llaves</a>
