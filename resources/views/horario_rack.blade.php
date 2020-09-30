@@ -1,9 +1,9 @@
-@extends('layout')
+@extends('layouts.app')
 
 @section('titulo','Horario de Rack')
 @section('nombreAyudante',$nombre_ayudante)
 
-@section('contenido')
+@section('content')
 	<div class="container text-center">
 		<h1>Horario de Rack</h1>
 		<div class="row">
@@ -100,6 +100,4 @@
 			</div>
 		</div>
 	</div>
-
-
 @endsection
